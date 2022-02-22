@@ -1,0 +1,8 @@
+<h1>Editing friend</h1>
+
+<%= render "form", friend: @friend %>
+
+<div class="mb-4">
+  <%= link_to "Back to friends", friends_path, class: "btn btn-info mt-4" %>
+  <%= button_to "Delete this friend", @friend, method: :delete, class: "btn btn-danger mt-4" %>
+</div>
